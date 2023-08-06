@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-container > h2 {
+  font-weight: 400;
+  font-family: "Spline Sans", sans-serif;
+  font-size: 20px;
+}
+.card-container > h3 {
+  font-weight: 300;
+  font-family: "Spline Sans", sans-serif;
+  font-size: 16px;
+  color: #5c5c5c;
+}
+.card-container {
+  max-width: 100%;
+  max-height: 100%;
+  width: 300px;
+  height: 500px;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  font-family: "Libre Franklin", sans-serif;
+  padding: 55px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 30px 30px -28px #9087ad;
+}
+
+.card-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-bottom-container {
+  font-family: "Spline Sans", sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card-img {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+  max-height: 400px;
+  width: 140px;
+  height: auto;
+}
+.card-title {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Spline Sans", sans-serif;
+  text-align: center;
+}
+.card-description {
+  font-weight: 300;
+}
+
+.add-to-cart-btn {
+  display: inline-block;
+  outline: none;
+
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 6px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid black;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: black;
+  background-color: transparent;
+  height: 48px;
+  width: 180px;
+}
+.add-to-cart-btn:hover {
+  color: white;
+  background-color: rgb(83, 224, 40);
+  border: none;
+}
+
+.home-page-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkout-button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 190px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #53c744;
+  border: 1px solid #64a75b;
+  background-color: transparent;
+  height: 48px;
+}
+.checkout-button:hover {
+  color: #fff;
+  background-color: #64a75b;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 160px;
+    height: 315px;
+    padding: 20px 10px;
+    gap: 0px;
+    box-shadow: 0px 20px 20px -30px #9087ad;
+  }
+  .add-to-cart-btn {
+    width: 116px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-title {
+    font-size: 15px;
+  }
+  .card-description {
+    font-size: 14px;
+    text-align: center;
+  }
+  .card-img {
+    width: 100px;
+    height: auto;
+    max-height: 100px;
+  }
+  .card-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .card-bottom-container {
+    gap: 3px;
+  }
+  .card-title {
+    margin-top: 10px;
+  }
+  .card-price {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .checkoutPage {
+    background-color: #f7eded;
+  }
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 24px;
+    margin-top: 30px;
+  }
+  .cart-item-img {
+    width: 60px;
+    height: 60px;
+  }
+  .cart-top-container {
+    display: flex;
+  }
+  .cart-bottom-container {
+    display: flex;
+    margin-left: 76px;
+    margin-top: 20px;
+    margin-right: 20px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cart-top-text {
+  }
+}
